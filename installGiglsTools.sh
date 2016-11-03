@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Created by Patrick Nuckolls '20
 #    patrick(dot)nuckolls(at)gmail(dot)com
 
@@ -17,11 +17,13 @@
 
 # Install directory, currently set to install in the directory it is placed in
 INSTALLPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+GIMPPLUGINSPATH='~/.gimp-2.8/plug-ins'
 
 #remove old installation and clone new copies of repositories
 initialpath=`pwd`
 cd $INSTALLPATH
-rm -rf gigls/ gimp-dbus/ louDBus/
+rm -rfv $INSTALLPATH/gigls $INSTALLPATH/gimp-dbus $INSTALLPATH/louDBus/
+rm -fv $GIMPPLUGINSPATH/ggimp-irgb-new $GIMPPLUGINSPATH/ggimp-rgb-list $GIMPPLUGINSPATH/ggimp-irgb-component $GIMPPLUGINSPATH/gimp-dbus
 git clone https://github.com/GlimmerLabs/gimp-dbus.git 
 git clone https://github.com/GlimmerLabs/louDBus.git 
 git clone https://github.com/GlimmerLabs/gigls.git 

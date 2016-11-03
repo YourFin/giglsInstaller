@@ -18,6 +18,7 @@
 INSTALLPATH=`pwd`
 
 #remove old installation and clone new copies of repositories
+cd $INSTALLPATH
 rm -rf gigls/ gimp-dbus/ louDBus/
 git clone https://github.com/GlimmerLabs/gimp-dbus.git 
 git clone https://github.com/GlimmerLabs/louDBus.git 

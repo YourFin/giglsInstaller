@@ -11,7 +11,7 @@ git clone https://github.com/YourFin/giglsInstaller.git
 Then copy installGiglsTools.sh to your install directory
 
 ```
-cp ./giglsInstaler/installGiglsTools.sh /path/to/your/install/dir
+cp ./giglsInstaller/installGiglsTools.sh /path/to/your/install/dir
 ```
 
 And finally run the file

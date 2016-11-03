@@ -16,7 +16,7 @@
 # I can make no guarantees. 
 
 # Install directory, currently set to install in the directory it is placed in
-INSTALLPATH=`pwd`
+INSTALLPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 #remove old installation and clone new copies of repositories
 initialpath=`pwd`

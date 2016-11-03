@@ -15,9 +15,11 @@
 # I bulit this tool on Arch linux, and while it should work on your distro/computer,
 # I can make no guarantees. 
 
+# Install directory, currently set to install in the directory it is placed in
 INSTALLPATH=`pwd`
 
 #remove old installation and clone new copies of repositories
+initialpath=`pwd`
 cd $INSTALLPATH
 rm -rf gigls/ gimp-dbus/ louDBus/
 git clone https://github.com/GlimmerLabs/gimp-dbus.git 
@@ -43,3 +45,4 @@ make
 #link newly compiled libraries
 raco link $INSTALLPATH/louDBus
 raco link $INSTALLPATH/gigls
+cd $initialpath

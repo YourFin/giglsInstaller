@@ -1,6 +1,13 @@
 # giglsInstaller
 Script for installing the gimp tools for csc 151 on linux
 
+required packages (ubuntu):
+libglib2.0-dev
+gimp
+gimp-2.0
+racket
+lib-gimp2.0-dev
+
 Usage:
 
 Clone the repository with

@@ -16,7 +16,7 @@
 # I can make no guarantees. 
 
 # Install directory, currently set to install in the directory it is placed in
-INSTALLPATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+INSTALLPATH=`pwd`
 GIMPPLUGINSPATH='~/.gimp-2.8/plug-ins'
 
 #remove old installation and clone new copies of repositories
